@@ -1,0 +1,169 @@
+/* Services Hero Section */
+.services-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0 100px;
+    margin-top: -80px;
+    text-align: center;
+}
+
+.services-hero-section h1 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Services Navigation */
+.services-nav-section {
+    padding: 30px 0;
+    background-color: white;
+    position: sticky;
+    top: 80px;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: #FFF9F0;
+    color: var(--maroon);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.service-nav-item i {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--gold);
+}
+
+.service-nav-item:hover,
+.service-nav-item.active {
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    color: #000;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Service Detail Sections */
+.service-detail-section {
+    padding: 100px 0;
+}
+
+.service-detail-section.bg-light {
+    background-color: #FFF9F0;
+}
+
+.service-detail-section .section-title {
+    text-align: left;
+}
+
+.service-detail-section .section-title:after {
+    left: 0;
+    transform: none;
+}
+
+.service-features {
+    background: #FFF9F0;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.service-pricing {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid var(--gold);
+    margin-bottom: 30px;
+}
+
+.service-gallery {
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Theme Cards */
+.theme-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border-top: 3px solid var(--gold);
+}
+
+.theme-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.theme-icon {
+    color: var(--gold);
+}
+
+/* CTA Section */
+.services-cta-section {
+    padding: 80px 0;
+    background: linear-gradient(45deg, var(--maroon), #6a0dad);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-hero-section {
+        padding: 120px 0 70px;
+    }
+    
+    .service-detail-section {
+        padding: 70px 0;
+    }
+    
+    .services-nav {
+        gap: 5px;
+    }
+    
+    .service-nav-item {
+        padding: 10px 15px;
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+    
+    .service-nav-item i {
+        font-size: 1.2rem;
+    }
+    
+    .service-gallery {
+        margin-top: 30px;
+    }
+}

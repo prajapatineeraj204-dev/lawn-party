@@ -1,0 +1,160 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1708133302586-2ffca3db5553?q=80&w=1185&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -80px; /* Compensate for fixed navbar */
+}
+
+.hero-content {
+    z-index: 2;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-content h1 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.btn-outline-light {
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-weight: 600;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About Preview Section */
+.about-preview-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(rgba(20, 83, 45, 0.9), rgba(20, 83, 45, 0.9)), url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80');
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+    position: relative;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Services Preview Section */
+.services-preview-section {
+    padding: 100px 0;
+    background-color: #FFF9F0;
+}
+
+/* Indian Wedding Section */
+.indian-wedding-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.indian-icon {
+    color: var(--maroon);
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 100px 0;
+    background-color: #FFF9F0;
+}
+
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 320px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgba(139, 0, 0, 0.8));
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+        min-height: 600px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stats-section,
+    .about-preview-section,
+    .services-preview-section,
+    .indian-wedding-section,
+    .gallery-section,
+    .contact-section {
+        padding: 70px 0;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+    
+    .gallery-item {
+        height: 250px;
+    }
+}
