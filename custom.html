@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Lawn Events | Premium Venue for Indian Weddings & Celebrations</title>
+    <meta name="description" content="Elegant lawn venue for Indian weddings, birthdays, anniversaries with complete pooja arrangements, mandap setup and multi-cuisine catering.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #FF9933;
+            --white: #FFFFFF;
+            --green: #138808;
+            --gold: #D4AF37;
+            --maroon: #8B0000;
+            --light-gold: #FFD700;
+            --festive-red: #C41E3A;
+            --leaf-green: #228B22;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            background-color: #FFFEF2;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        /* Indian Pattern Background */
+        .indian-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            z-index: 2;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        
+        .hero-content h1 {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, var(--gold), var(--light-gold));
+            border: none;
+            color: #000;
+            font-weight: 600;
+            padding: 15px 35px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.6);
+            background: linear-gradient(45deg, var(--light-gold), var(--gold));
+        }
+        
+        .btn-outline-light {
+            border-radius: 50px;
+            padding: 15px 35px;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--maroon);
+            font-size: 2.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(to right, var(--saffron), var(--gold), var(--green));
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+        
+        .about-section, .services-section, .facilities-section, .pricing-section {
+            padding: 100px 0;
+        }
+        
+        .gallery-section, .contact-section, .indian-wedding-section {
+            padding: 100px 0;
+            background-color: #FFF9F0;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            margin: 0 8px;
+            color: var(--maroon) !important;
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--saffron), var(--gold), var(--green));
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+            border-radius: 3px;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: 2rem;
+            background: linear-gradient(45deg, var(--saffron), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.3s;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-card, .facility-card, .package-card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s;
+            height: 100%;
+            border: none;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            position: relative;
+        }
+        
+        .service-card:hover, .facility-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-icon, .facility-icon, .indian-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .service-icon {
+            color: var(--gold);
+        }
+        
+        .facility-icon {
+            color: var(--green);
+        }
+        
+        .indian-icon {
+            color: var(--maroon);
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            height: 320px;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border: 5px solid white;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, rgba(139, 0, 0, 0.8));
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .package-card {
+            padding: 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .package-card.popular {
+            transform: scale(1.05);
+            border: 3px solid var(--gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+        }
+        
+        .package-card.popular:before {
+            content: 'Most Popular';
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: linear-gradient(45deg, var(--saffron), var(--gold));
+            color: white;
+            padding: 8px 40px;
+            transform: rotate(45deg);
+            font-weight: 600;
+            font-size: 0.9rem;
+            z-index: 1;
+        }
+        
+        .package-header {
+            background: linear-gradient(45deg, var(--maroon), #6a0dad);
+            color: white;
+            padding: 30px;
+            border-radius: 0;
+        }
+        
+        .package-price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--maroon);
+            margin: 30px 0;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .package-price:before {
+            content: '₹';
+            font-size: 1.5rem;
+            position: absolute;
+            left: -25px;
+            top: 10px;
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--gold);
+        }
+        
+        .form-control {
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid #eee;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+        }
+        
+        .whatsapp-btn {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
+            color: white;
+        }
+        
+        footer {
+            background: linear-gradient(45deg, #1a472a, #0d2818);
+            color: white;
+            padding: 70px 0 30px;
+            position: relative;
+        }
+        
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, var(--saffron), var(--white), var(--green));
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 12px;
+            transition: all 0.3s;
+            position: relative;
+            padding-left: 0;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 10px;
+        }
+        
+        .footer-links a:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover:before {
+            opacity: 1;
+            left: -5px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .social-icons a:hover {
+            color: var(--gold);
+            transform: translateY(-8px) scale(1.2);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 25px;
+            margin-top: 50px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(rgba(20, 83, 45, 0.9), rgba(20, 83, 45, 0.9)), url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80');
+            background-size: cover;
+            color: white;
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Diwali Lights Effect */
+        .diwali-light {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+            z-index: 1;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        
+        /* Indian Badges */
+        .indian-badge {
+            background: linear-gradient(45deg, var(--saffron), var(--gold));
+            color: #000;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(255, 153, 51, 0.3);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 80vh;
+                min-height: 600px;
+                background-attachment: scroll;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .about-section, .services-section, .facilities-section, 
+            .gallery-section, .pricing-section, .contact-section,
+            .indian-wedding-section {
+                padding: 70px 0;
+            }
+            
+            .package-card.popular {
+                transform: none;
+                margin: 30px 0;
+            }
+            
+            .package-card.popular:before {
+                right: -30px;
+                font-size: 0.8rem;
+                padding: 6px 35px;
+            }
+        }
+        
+        /* Floating Elements */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="indian-pattern">
+    <!-- Diwali Lights Effect -->
+    <div id="diwaliLights"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-leaf me-2"></i>Shubh Lawn Events
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#indian-wedding">Indian Wedding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facilities">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row hero-content">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Shubh Aarambh, Sundar Samarambh<br>Perfect Lawn for Indian Weddings & Celebrations</h1>
+                    <p class="lead mb-4">Experience the magic of traditional Indian celebrations in our lush green lawns. Where every event becomes an unforgettable memory with authentic Indian hospitality and premium facilities.</p>
+                    
+                    <div class="mb-5">
+                        <span class="indian-badge"><i class="fas fa-dharmachakra me-2"></i> Vedic Mandap Setup</span>
+                        <span class="indian-badge"><i class="fas fa-om me-2"></i> Pooja & Havan</span>
+                        <span class="indian-badge"><i class="fas fa-music me-2"></i> Live Ghazal & DJ</span>
+                        <span class="indian-badge"><i class="fas fa-utensils me-2"></i> Multi-Cuisine Food</span>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary me-3">Book Now <i class="fas fa-calendar-check ms-2"></i></a>
+                    <a href="#contact" class="btn btn-outline-light">Get Instant Quote <i class="fas fa-rupee-sign ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Hamare Baare Mein</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-in">
+                    <p class="lead">Shubh Lawn Events mein aapka swagat hai! 2010 se hum logon ke khushiyon ke saathi bane hue hain. Hamara 5-acre ka sprawling property traditional Indian weddings, birthdays, anniversaries aur corporate events ke liye perfect setting provide karta hai.</p>
+                    <p>Hare-bhare lawns ke beech, hamara venue natural beauty ko modern amenities ke saath combine karta hai. 10+ saal ke experience ke saath, humne event hosting ki art ko perfect kar liya hai, ensuring har detail ka dhyaan rakha jaata hai.</p>
+                    <p>Hamara venue 2000 guests ko accommodate kar sakta hai with separate indoor and outdoor facilities. Hum apne clients ko ek seamless, stress-free experience provide karne par garv mahsoos karte hain.</p>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="service-card p-4 text-center floating" style="animation-delay: 0.2s">
+                                <div class="service-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h4>13+ Saal</h4>
+                                <p>Unforgettable memories banane ka anubhav</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card p-4 text-center floating" style="animation-delay: 0.4s">
+                                <div class="service-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>2000+ Guests</h4>
+                                <p>Bade celebrations ke liye spacious capacity</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card p-4 text-center floating" style="animation-delay: 0.6s">
+                                <div class="service-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h4>Indoor & Outdoor</h4>
+                                <p>Kisi bhi mausam ke liye flexible spaces</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card p-4 text-center floating" style="animation-delay: 0.8s">
+                                <div class="service-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>Premium Quality</h4>
+                                <p>Luxury amenities aur services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 fade-in">
+                    <div class="stat-number">500+</div>
+                    <p>Events Hosted</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 fade-in">
+                    <div class="stat-number">200+</div>
+                    <p>Shaadi Successfully</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 fade-in">
+                    <div class="stat-number">50+</div>
+                    <p>Corporate Events</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 fade-in">
+                    <div class="stat-number">98%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Hamari Services</h2>
+            <p class="text-center mb-5 lead">Hum har prakar ke celebrations ke liye complete event hosting solutions provide karte hain</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="service-card p-4 text-center h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Wedding Lawn</h4>
+                        <p>Beautifully decorated lawn with traditional mandap setup, floral arrangements, and ethnic lighting for perfect wedding ceremony. Complete Vedic arrangements available.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="service-card p-4 text-center h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4>Birthday Party Lawn</h4>
+                        <p>Themed decorations, entertainment arrangements, and customizable setups for memorable birthday celebrations of all ages with Indian and western themes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="service-card p-4 text-center h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h4>Anniversary Celebration</h4>
+                        <p>Elegant setups for milestone anniversaries with romantic lighting, floral decor, and personalized touches. Golden and Silver anniversary special packages.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="service-card p-4 text-center h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Engagement & Reception</h4>
+                        <p>Luxurious settings for pre-wedding ceremonies with stage setups, ring ceremony arrangements, and entertainment options. Traditional and modern themes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="service-card p-4 text-center h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Corporate Events</h4>
+                        <p>Professional setups for conferences, seminars, product launches, and corporate parties with AV facilities. Team building events and annual day celebrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="service-card p-4 text-center h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Family Events</h4>
+                        <p>Perfect venue for family reunions, religious ceremonies, mundan, thread ceremony, and other personal celebrations with homely Indian ambiance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indian Wedding Special Section -->
+    <section id="indian-wedding" class="indian-wedding-section">
+        <div class="container">
+            <h2 class="section-title">Indian Wedding Specials</h2>
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="text-center p-4">
+                        <div class="indian-icon mb-3 floating">
+                            <i class="fas fa-om fa-3x"></i>
+                        </div>
+                        <h4>Pooja & Havan Arrangements</h4>
+                        <p>Complete arrangements for wedding rituals with experienced panditji, havan kund, and all traditional puja materials. Customized as per your family traditions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="text-center p-4">
+                        <div class="indian-icon mb-3 floating" style="animation-delay: 0.3s">
+                            <i class="fas fa-utensils fa-3x"></i>
+                        </div>
+                        <h4>Multi-Cuisine Catering</h4>
+                        <p>North Indian, South Indian, Gujarati, Punjabi, Bengali - customize your wedding menu with live counters, chaat corner, and traditional sweet counters.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="text-center p-4">
+                        <div class="indian-icon mb-3 floating" style="animation-delay: 0.6s">
+                            <i class="fas fa-palette fa-3x"></i>
+                        </div>
+                        <h4>Theme Based Decor</h4>
+                        <p>Royal Rajasthani, Modern Punjabi, Traditional South Indian, Gujarati wedding themes available with matching mandap, stage, and entrance decor.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 fade-in">
+                    <div class="text-center p-4">
+                        <div class="indian-icon mb-3 floating" style="animation-delay: 0.9s">
+                            <i class="fas fa-music fa-3x"></i>
+                        </div>
+                        <h4>Live Music & Entertainment</h4>
+                        <p>Ghazal nights, Sufi singers, DJ for sangeet, dhol players for baraat, and traditional folk dancers to make your wedding celebrations unforgettable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="text-center p-4">
+                        <div class="indian-icon mb-3 floating" style="animation-delay: 1.2s">
+                            <i class="fas fa-camera fa-3x"></i>
+                        </div>
+                        <h4>Photography & Videography</h4>
+                        <p>Tie-ups with best wedding photographers for pre-wedding, wedding, and post-wedding shoots. Drone coverage available for aerial shots.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="text-center p-4">
+                        <div class="indian-icon mb-3 floating" style="animation-delay: 1.5s">
+                            <i class="fas fa-bed fa-3x"></i>
+                        </div>
+                        <h4>Guest Accommodation</h4>
+                        <p>Special arrangements for outstation guests with tie-ups with nearby hotels. Airport pickup and drop facilities available on request.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Hamari Gallery</h2>
+            <p class="text-center mb-5 lead">Humare beautifully decorated events ki jhalkiyan dekhiye</p>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding Mandap">
+                        <div class="gallery-overlay">
+                            <h5>Wedding Mandap</h5>
+                            <p>Traditional floral mandap with ethnic decorations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sangeet Night">
+                        <div class="gallery-overlay">
+                            <h5>Sangeet Night</h5>
+                            <p>Colorful sangeet with stage performances</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Night Lighting">
+                        <div class="gallery-overlay">
+                            <h5>Night Lighting</h5>
+                            <p>Magical lighting for evening celebrations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600586116866-4b429d57d954?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reception Stage">
+                        <div class="gallery-overlay">
+                            <h5>Reception Stage</h5>
+                            <p>Elegant stage setup for wedding reception</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities-section">
+        <div class="container">
+            <h2 class="section-title">Hamari Facilities</h2>
+            <p class="text-center mb-5 lead">Seamless event experience ke liye premium amenities</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <h4>Ample Parking</h4>
+                        <p>Secure parking for 500+ vehicles with valet service. Separate parking for VIP guests and baraat processions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Power Backup</h4>
+                        <p>100% power backup with generators to ensure uninterrupted events even during power cuts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-restroom"></i>
+                        </div>
+                        <h4>Modern Washrooms</h4>
+                        <p>Clean, well-maintained separate facilities for men and women with attendants and baby changing stations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4>DJ & Sound System</h4>
+                        <p>Premium audio systems and professional DJ services for all events. Traditional music systems also available.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Catering Support</h4>
+                        <p>In-house kitchen facilities and tie-ups with premium caterers. Jain food options available.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Decoration Support</h4>
+                        <p>Professional decorators for floral, theme-based, and traditional Indian wedding setups.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4>High-Speed WiFi</h4>
+                        <p>Free high-speed internet access throughout the venue for guests and live streaming.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="facility-card p-4 text-center h-100">
+                        <div class="facility-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Security</h4>
+                        <p>24/7 security personnel and CCTV surveillance for safety of guests and their belongings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Packages Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Hamare Packages</h2>
+            <p class="text-center mb-5 lead">Alag-alag needs ke liye tailored flexible packages</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Shubh</h3>
+                            <p>Intimate gatherings ke liye</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="package-price">89,999</div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 300 guests tak lawn space</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Basic decoration</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Standard sound system</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 12 hours venue access</li>
+                                <li class="mb-3"><i class="fas fa-times text-secondary me-2"></i> Catering included nahi</li>
+                                <li class="mb-3"><i class="fas fa-times text-secondary me-2"></i> DJ included nahi</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-primary w-100">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="package-card popular">
+                        <div class="package-header">
+                            <h3>Shagun</h3>
+                            <p>Sabse Popular Choice</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="package-price">1,49,999</div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 800 guests tak lawn space</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Premium decoration</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Professional sound system</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 24 hours venue access</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Basic catering included</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> DJ services included</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary w-100">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Maha Shubh</h3>
+                            <p>Grand celebrations ke liye</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="package-price">2,49,999</div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 2000 guests tak lawn space</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Luxury decoration with themes</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Premium sound & lighting</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> 48 hours venue access</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> Premium catering included</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i> DJ + Live music options</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-primary w-100">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <p class="text-muted">Sabhi packages mein parking, power backup, washrooms, aur security included hai. Custom packages available on request.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Apna Event Book Karein</h2>
+            <p class="text-center mb-5 lead">Apni perfect celebration plan karne ke liye humse connect karein</p>
+            
+            <div class="row">
+                <div class="col-lg-7 mb-5 mb-lg-0 fade-in">
+                    <div class="contact-form">
+                        <form id="bookingForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Aapka Naam" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control" required>
+                                        <option value="" disabled selected>Event Type</option>
+                                        <option>Wedding</option>
+                                        <option>Birthday Party</option>
+                                        <option>Anniversary</option>
+                                        <option>Engagement/Reception</option>
+                                        <option>Corporate Event</option>
+                                        <option>Family Event</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" placeholder="Approximate Guests" min="1" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="4" placeholder="Additional Requirements"></textarea>
+                            <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 fade-in">
+                    <h3 class="mb-4">Contact Information</h3>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-map-marker-alt text-gold me-2"></i> Location</h5>
+                        <p>Green Valley Road, Near Central Park,<br>Mumbai, Maharashtra 400001</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-phone text-gold me-2"></i> Phone</h5>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-envelope text-gold me-2"></i> Email</h5>
+                        <p>info@shubhlaunevents.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <a href="https://wa.me/919876543210" class="whatsapp-btn mb-3">
+                            <i class="fab fa-whatsapp me-2"></i> WhatsApp par Message Karein
+                        </a>
+                        <p class="text-muted small">30 minutes mein quick response</p>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h5 class="mb-3">Location Map</h5>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7374020216084!2d72.82821431539533!3d19.075104987111957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c7b4d1c1d1%3A0x1b8c7a7c7b4d1c1d1!2sMumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1631084187293!5m2!1sen!2sin" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="mb-4"><i class="fas fa-leaf me-2"></i>Shubh Lawn Events</h3>
+                    <p>Nature ki god mein unforgettable memories banaye. Weddings, birthdays, anniversaries aur corporate events ke liye premier venue.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#indian-wedding">Indian Wedding</a>
+                        <a href="#pricing">Packages</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-4">Hamari Services</h5>
+                    <div class="footer-links">
+                        <a href="#services">Wedding Lawn</a>
+                        <a href="#services">Birthday Parties</a>
+                        <a href="#services">Anniversary Events</a>
+                        <a href="#services">Corporate Events</a>
+                        <a href="#services">Engagement Functions</a>
+                        <a href="#services">Family Celebrations</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">Business Hours</h5>
+                    <p>Monday - Friday: 9 AM - 9 PM</p>
+                    <p>Saturday - Sunday: 8 AM - 11 PM</p>
+                    <p>Holidays: Prior booking se open</p>
+                    <p class="mt-3">Emergency Contact: +91 98765 43211</p>
+                    <div class="mt-4">
+                        <h6>Accepted Payment Methods</h6>
+                        <div class="mt-2">
+                            <i class="fas fa-credit-card me-2"></i>
+                            <i class="fab fa-cc-visa me-2"></i>
+                            <i class="fab fa-cc-mastercard me-2"></i>
+                            <i class="fab fa-cc-amex me-2"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Shubh Lawn Events. All Rights Reserved. | Memorable celebrations ke liye designed with <i class="fas fa-heart text-danger"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Aapki inquiry ke liye dhanyavaad! Hum 24 ghante mein aapse contact karenge.');
+            this.reset();
+        });
+        
+        // Fade-in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = function() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        // Diwali lights effect
+        function createDiwaliLights() {
+            const container = document.getElementById('diwaliLights');
+            const colors = ['#FF9933', '#FFFFFF', '#138808', '#FFD700', '#FF6B6B', '#4ECDC4'];
+            
+            for(let i = 0; i < 50; i++) {
+                const light = document.createElement('div');
+                light.className = 'diwali-light';
+                light.style.left = Math.random() * 100 + 'vw';
+                light.style.top = Math.random() * 100 + 'vh';
+                light.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                light.style.animationDelay = Math.random() * 2 + 's';
+                light.style.width = Math.random() * 10 + 5 + 'px';
+                light.style.height = light.style.width;
+                container.appendChild(light);
+            }
+        }
+        
+        // Initialize
+        window.addEventListener('DOMContentLoaded', () => {
+            fadeInOnScroll();
+            createDiwaliLights();
+        });
+        
+        // Check on scroll
+        window.addEventListener('scroll', fadeInOnScroll);
+    </script>
+</body>
+</html>

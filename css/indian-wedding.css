@@ -1,0 +1,685 @@
+/* Indian Wedding Hero Section */
+.wedding-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 180px 0 120px;
+    margin-top: -80px;
+    text-align: center;
+    position: relative;
+}
+
+.wedding-hero-section h1 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.wedding-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.wedding-tag {
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    color: #000;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1));
+}
+
+/* Wedding Journey */
+.wedding-journey-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.journey-timeline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.journey-timeline:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    right: 50px;
+    height: 3px;
+    background: linear-gradient(to right, var(--saffron), var(--gold), var(--green));
+    z-index: 1;
+}
+
+.journey-step {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: #000;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+    border: 5px solid white;
+}
+
+.journey-step h4 {
+    color: var(--maroon);
+    margin-bottom: 10px;
+}
+
+.journey-step p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Ceremonies Section */
+.ceremonies-section {
+    padding: 100px 0;
+    background-color: #FFF9F0;
+}
+
+.ceremony-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: all 0.3s;
+    border-top: 5px solid var(--gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.ceremony-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.ceremony-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, var(--saffron), var(--green));
+}
+
+.ceremony-icon {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.ceremony-card h4 {
+    color: var(--maroon);
+    margin-bottom: 15px;
+}
+
+.ceremony-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.ceremony-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.ceremony-features li:last-child {
+    border-bottom: none;
+}
+
+.ceremony-features i {
+    color: var(--green);
+    margin-right: 10px;
+}
+
+/* Themes Section */
+.themes-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.theme-card {
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.theme-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.theme-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 30px;
+    transform: translateY(100px);
+    transition: all 0.3s;
+}
+
+.theme-card:hover .theme-overlay {
+    transform: translateY(0);
+}
+
+.theme-overlay h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.theme-overlay p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+/* Theme Backgrounds */
+.royal-theme {
+    background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+}
+
+.south-theme {
+    background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+}
+
+.punjabi-theme {
+    background-image: url('https://images.unsplash.com/photo-1592405381005-0a2c9dae4d5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+}
+
+.gujarati-theme {
+    background-image: url('https://images.unsplash.com/photo-1567446537711-4302c76e0b8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+}
+
+.bengali-theme {
+    background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+}
+
+.modern-theme {
+    background-image: url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+}
+
+/* Catering Section */
+.catering-section {
+    padding: 100px 0;
+    background-color: #FFF9F0;
+}
+
+.catering-menu {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-category:last-child {
+    border-bottom: none;
+}
+
+.menu-category h4 {
+    color: var(--maroon);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-category h4 i {
+    color: var(--gold);
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-category li {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    color: #555;
+}
+
+.menu-category li:last-child {
+    border-bottom: none;
+}
+
+.catering-features {
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.feature-content h4 {
+    color: var(--maroon);
+    margin-bottom: 5px;
+}
+
+.feature-content p {
+    color: #666;
+    margin: 0;
+}
+
+.catering-cta {
+    background: linear-gradient(45deg, var(--maroon), #6a0dad);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.catering-cta h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.catering-cta .btn-primary {
+    background: white;
+    color: var(--maroon);
+    margin-top: 15px;
+}
+
+.catering-cta .btn-primary:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+/* Entertainment Section */
+.entertainment-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.entertainment-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: all 0.3s;
+    border-top: 5px solid var(--gold);
+}
+
+.entertainment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.entertainment-icon {
+    color: var(--gold);
+}
+
+.entertainment-card h4 {
+    color: var(--maroon);
+    margin-bottom: 15px;
+}
+
+.entertainment-card p {
+    color: #666;
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+.entertainment-tag {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--saffron), var(--gold));
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Wedding Packages */
+.wedding-packages-section {
+    padding: 100px 0;
+    background-color: #FFF9F0;
+}
+
+.package-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.package-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.package-card.popular {
+    border: 3px solid var(--gold);
+    transform: scale(1.05);
+}
+
+.package-card.popular:hover {
+    transform: scale(1.05) translateY(-15px);
+}
+
+.package-card.royal {
+    border: 3px solid var(--maroon);
+}
+
+.package-badge {
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: linear-gradient(45deg, var(--saffron), var(--gold));
+    color: white;
+    padding: 8px 40px;
+    transform: rotate(45deg);
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+.package-header {
+    background: linear-gradient(45deg, var(--maroon), #6a0dad);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.package-header h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.package-header p {
+    opacity: 0.9;
+    margin: 0;
+}
+
+.package-body {
+    padding: 30px;
+}
+
+.package-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--maroon);
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.package-price:before {
+    content: '₹';
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    top: 10px;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.package-features li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.package-features li:last-child {
+    border-bottom: none;
+}
+
+.package-features i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.package-features .fa-check {
+    color: var(--green);
+}
+
+.package-features .fa-times {
+    color: #ccc;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+    background: linear-gradient(45deg, #FFF9F0, #FFF0E0);
+    color: var(--maroon);
+    font-weight: 600;
+    padding: 20px;
+    border: none;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    color: #000;
+}
+
+.accordion-body {
+    padding: 20px;
+    background: white;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Consultation CTA */
+.consultation-cta {
+    padding: 80px 0;
+    background: linear-gradient(45deg, var(--maroon), #6a0dad);
+    color: white;
+}
+
+.consultation-cta h2 {
+    color: white;
+}
+
+.consultation-cta .lead {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .wedding-hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .journey-timeline:before {
+        display: none;
+    }
+    
+    .journey-timeline {
+        gap: 20px;
+    }
+    
+    .journey-step {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+    
+    .package-card.popular {
+        transform: none;
+    }
+    
+    .package-card.popular:hover {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .wedding-hero-section {
+        padding: 150px 0 80px;
+        background-attachment: scroll;
+    }
+    
+    .wedding-hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .wedding-tags {
+        gap: 10px;
+    }
+    
+    .wedding-tag {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .wedding-journey-section,
+    .ceremonies-section,
+    .themes-section,
+    .catering-section,
+    .entertainment-section,
+    .wedding-packages-section,
+    .faq-section {
+        padding: 70px 0;
+    }
+    
+    .journey-step {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    .step-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .theme-card {
+        height: 250px;
+    }
+    
+    .theme-overlay {
+        padding: 20px;
+        transform: translateY(0);
+        background: rgba(0, 0, 0, 0.7);
+    }
+    
+    .package-badge {
+        right: -30px;
+        font-size: 0.8rem;
+        padding: 6px 35px;
+    }
+    
+    .consultation-cta {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .consultation-cta .col-lg-4 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .journey-step {
+        flex: 0 0 100%;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .package-badge {
+        right: -25px;
+        font-size: 0.7rem;
+        padding: 5px 30px;
+    }
+}
